@@ -1,3 +1,5 @@
+link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 /* Обнуление стилей */
 * {
     padding: 0;
@@ -150,8 +152,15 @@ h6 {
     
 }
 .product_item-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    border: 2px solid black;
     display: flex;
     align-items: center;
+}
+.fotorama{
+margin: 15px;
 }
 .img-item {
 }
