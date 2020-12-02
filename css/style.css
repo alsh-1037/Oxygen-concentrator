@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 /* Обнуление стилей */
+
 * {
     padding: 0;
     margin: 0;
@@ -187,12 +188,10 @@ body {
     font-size: 42px;
     margin-bottom: 20px;
 }
-.product_item-card {
-    max-width: 800px;
+.product_item-card_wrap {
     height: 540px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 2%;
+    border-radius: 2% 2% 0% 0%;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -205,6 +204,45 @@ body {
 .card-body {
     display: flex;
     flex-direction: column;
+}
+/* Акордион */
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    line-height: 20px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #2ee59d;
+}
+
+.accordion:after {
+    content: "\002B";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 /* Кнопка */
 .button {
@@ -234,9 +272,39 @@ body {
     transform: translateY(-2px);
 }
 .card-text {
-    font-size: 16px;
-    font-weight: 400;
+    width: 350px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 300;
     margin: 10px;
+}
+.technical_data {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+.MsoTableGrid {
+    border: none;
+    padding: 0cm 5.4pt 0cm 5.4pt;
+    width: 100%;
+    margin: 15px;
+}
+.MsoTableGrid p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #040404;
+}
+.table_bolt {
+    color: #414141;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.table_bolt2 {
+    color: #414141;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 .contact__row {
     margin-top: 40px;
@@ -292,6 +360,25 @@ body {
         margin-left: 10px;
         margin-top: 30px;
     }
+    .product_item-card_wrap,
+    .technical_data {
+        width: 820px;
+    }
+    .MsoTableGrid {
+        display: flex;
+        width: 560px;
+        margin: 0 auto;
+    }
+    .accordion {
+        margin-bottom: 10px;
+    }
+    .table_bolt2 {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .table-text_r {
+        text-align: center;
+    }
 }
 @media (max-width: 818px) {
     .content {
@@ -314,7 +401,7 @@ body {
         margin-right: 20px;
         z-index: 2;
     }
-    .product_item-card {
+    .product_item-card_wrap {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -343,6 +430,26 @@ body {
     }
     .contact__card {
         margin-bottom: 10px;
+    }
+    .MsoTableGrid {
+        display: flex;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .accordion {
+        margin-bottom: 10px;
+    }
+    .table_bolt2 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .MsoTableGrid p {
+        font-weight: 300;
+        font-size: 12px;
+        color: #040404;
+    }
+    .table-text_r {
+        text-align: right;
     }
 }
 @media (max-width: 480px) {
