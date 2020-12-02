@@ -170,6 +170,7 @@ body{
 }
 .product_item-card {
     max-width: 800px;
+    height:528px ;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 2%;
