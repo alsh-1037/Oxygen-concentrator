@@ -115,7 +115,7 @@ body {
 .telnumber {
 }
 .content {
-    background-image: url("../img/bg.jpg.png");
+    background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -189,7 +189,7 @@ body {
 }
 .product_item-card {
     max-width: 800px;
-    height: 528px;
+    height: 540px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 2%;
