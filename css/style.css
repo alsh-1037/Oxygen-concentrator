@@ -215,7 +215,14 @@ body {
 .about-us__text-main {
 }
 .product {
-    margin-top: 40px;
+    padding-top: 40px;
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .product__row {
     display: flex;
@@ -231,6 +238,7 @@ body {
 }
 
 .product_item-card_wrap {
+    background: white;
     height: 540px;
     margin-top: 10px;
     border-radius: 2% 2% 0% 0%;
@@ -249,7 +257,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin: 5px 10px 0px 5px;
+    margin: 5px 20px 0px 5px;
 }
 .card-title {
     font-size: 26px;
@@ -366,6 +374,7 @@ body {
     letter-spacing: 3px;
     font-weight: 600;
 }
+
 .contact__row {
     margin-top: 60px;
     margin-bottom: 60px;
