@@ -87,33 +87,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.header {
-    background-color: rgba(160, 152, 173, 0.1);
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.header-info__row {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .container {
     max-width: 900px;
     margin: 0px auto;
-}
-.logo {
-}
-.logo__text {
-    font-size: 26px;
-    font-weight: 300;
-    color: #a5a5bc;
-}
-.telnumber {
 }
 .content {
     background-image: url("../img/bg.png");
@@ -133,7 +110,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    background: rgba(58, 177, 224, 0.1);
+    background: rgba(0, 11, 16, 0.3);
     z-index: 1;
 }
 .title_main {
@@ -164,15 +141,18 @@ body {
     justify-content: left;
     align-items: center;
     margin-top: 40px;
+    z-index: 2;
 }
 .about-us_img {
     margin-right: 10px;
+    z-index: 2;
 }
 .about-us__text {
     font-size: 16px;
     line-height: 20px;
 
-    color: #414141;
+    color: #ffffff;
+    z-index: 2;
 }
 .about-us__text-main {
 }
@@ -185,8 +165,11 @@ body {
     align-items: center;
 }
 .product__title {
-    font-size: 42px;
+    font-size: 46px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: rgb(3, 19, 53) 0 0 2px;
 }
 .product_item-card_wrap {
     height: 540px;
@@ -195,6 +178,7 @@ body {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .fotorama {
     margin: 15px;
@@ -204,13 +188,30 @@ body {
 .card-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 5px 10px 0px 5px;
+}
+.card-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: rgb(3, 19, 53) 0 0 2px;
+}
+.card-text {
+    width: 350px;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    /* text-indent: 20px; */
 }
 /* Акордион */
 .accordion {
     background-color: #ffffff;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 5px 18px;
     width: 100%;
     border: none;
     text-align: center;
@@ -236,7 +237,6 @@ body {
 .active:after {
     content: "\2212";
 }
-
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -244,24 +244,31 @@ body {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+.card-price {
+    margin-top: 20px;
+    color: #01011b;
+    font-size: 12px;
+}
+.price_bolt {
+    font-size: 36px;
+}
 /* Кнопка */
 .button {
     text-decoration: none;
     outline: none;
     display: inline-block;
-    width: 200px;
+    width: 100%;
     height: 45 px;
     line-height: 45px;
     border-radius: 45px;
-    margin: 50px 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 11px;
+    margin: 30px 20px 10px 20px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #524f4e;
-    background: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #000000;
+    background: rgb(255, 255, 255);
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
@@ -270,13 +277,6 @@ body {
     box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
     color: white;
     transform: translateY(-2px);
-}
-.card-text {
-    width: 350px;
-    height: 100%;
-    font-size: 20px;
-    font-weight: 300;
-    margin: 10px;
 }
 .technical_data {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
