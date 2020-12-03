@@ -92,6 +92,22 @@ body {
     max-width: 900px;
     margin: 0px auto;
 }
+.content_language {
+    float: right;
+    margin: 20px 40px;
+}
+.ru,
+.ua {
+    color: #000000;
+    font-size: 16px;
+    margin: 5px;
+}
+.ua:hover {
+    color: #000000;
+}
+.ru:hover {
+    color: #000000;
+}
 .content {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
@@ -102,7 +118,7 @@ body {
     align-items: center;
     position: relative;
 }
-.content::before {
+/* .content::before {
     content: "";
     position: absolute;
     left: 0;
@@ -112,7 +128,7 @@ body {
     display: block;
     background: rgba(0, 11, 16, 0.3);
     z-index: 1;
-}
+} */
 .title_main {
     max-width: 500px;
     margin-left: 20px;
