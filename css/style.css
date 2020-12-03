@@ -177,7 +177,7 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
-    height: 100vh;
+    height: calc(100vh - 13.38vh);
     margin-left: 20px;
     margin-top: 40px;
     margin-right: 20px;
@@ -606,6 +606,12 @@ body {
     }
 }
 @media (max-height: 580px) {
+    .content_language {
+        margin: 10px;
+    }
+    .title_main {
+        margin-top: 20px;
+    }
     .main__text {
         font-size: 32px;
         margin-bottom: 10px;
@@ -624,13 +630,16 @@ body {
     }
 }
 @media (max-height: 320px) {
+    .title_main {
+        margin: 5px;
+    }
     .about-us {
-        margin-top: 10px;
+        margin: 10px;
     }
     .description {
         margin: 0;
     }
     .about-us__bloc {
-        margin-top: 20px;
+        margin: 5px;
     }
 }
