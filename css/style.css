@@ -159,7 +159,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: static;
 }
 /* .content::before {
     content: "";
@@ -173,7 +173,11 @@ body {
     z-index: 1;
 } */
 .title_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 500px;
+    height: 100%;
     margin-left: 20px;
     margin-top: 40px;
     margin-right: 20px;
@@ -601,5 +605,16 @@ body {
     }
     .map {
         height: 100vh;
+    }
+}
+@media (max-height: 580px) {
+    .about-us {
+        margin-top: 10px;
+    }
+    .description {
+        margin: 0;
+    }
+    .about-us__bloc {
+        margin-top: 20px;
     }
 }
