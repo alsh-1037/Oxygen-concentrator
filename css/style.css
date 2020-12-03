@@ -156,7 +156,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
     position: static;
@@ -177,7 +177,7 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
-    height: 100%;
+    height: 100vh;
     margin-left: 20px;
     margin-top: 40px;
     margin-right: 20px;
@@ -186,14 +186,13 @@ body {
 .main__text {
     font-size: 46px;
     text-align: left;
-    margin-bottom: 20px;
 }
 .description {
     font-size: 24px;
+    margin-bottom: 40px;
     color: #414141;
 }
 .about-us {
-    margin-top: 60px;
 }
 .about-us_row {
     display: flex;
@@ -203,8 +202,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 40px;
-    z-index: 2;
+    margin-bottom: 20px;
 }
 .about-us_img {
     margin-right: 10px;
@@ -608,6 +606,24 @@ body {
     }
 }
 @media (max-height: 580px) {
+    .main__text {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .about-us__bloc {
+        margin: 10px 0px;
+    }
+    .about-us {
+        margin-top: 10px;
+    }
+    .description {
+        margin: 0;
+    }
+    .about-us__bloc {
+        margin-top: 20px;
+    }
+}
+@media (max-height: 320px) {
     .about-us {
         margin-top: 10px;
     }
