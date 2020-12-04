@@ -127,14 +127,14 @@ body {
     letter-spacing: 1px;
     font-weight: 400;
     color: #000000;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    background: #2ee59d;
+    box-shadow: 0 8px 10px rgba(101, 255, 140, 0.1);
     transition: 0.3s;
 }
 .tell_link:hover {
-    background: #e2bf56;
-    box-shadow: 0 15px 20px rgba(229, 192, 46, 0.4);
-    color: white;
+    background: #fff;
+    box-shadow: 0 15px 20px rgba(28, 23, 7, 0.4);
+    color: #040404;
     transform: translateY(-2px);
 }
 .phone_img {
@@ -177,9 +177,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
     height: calc(100vh - 13.38vh);
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 40px;
     margin-right: 20px;
     z-index: 2;
@@ -187,14 +187,17 @@ body {
 .main__text {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 42px;
-    text-align: left;
+    font-size: 38px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    text-align: center;
 }
 .description {
+    max-width: 550px;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 30px;
     margin-bottom: 40px;
     color: #414141;
 }
@@ -352,15 +355,15 @@ body {
     letter-spacing: 1px;
     font-weight: 400;
     color: #000000;
-    background: rgb(255, 255, 255);
+    background: #2ee59d;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 .button:hover {
-    background: #2ee59d;
-    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
-    color: white;
-    transform: translateY(-2px);
+    background: #fff;
+    box-shadow: 0 15px 20px rgba(1, 5, 4, 0.4);
+    color: #040404;
+    transform: translateY(-1px);
 }
 .technical_data {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
@@ -509,7 +512,7 @@ body {
         margin: 0 auto;
     }
     .main__text {
-        font-size: 48px;
+        font-size: 38px;
         text-align: center;
     }
     .description {
@@ -634,7 +637,7 @@ body {
         margin-top: 20px;
     }
     .main__text {
-        font-size: 32px;
+        font-size: 26px;
         margin-bottom: 10px;
     }
     .about-us__bloc {
