@@ -140,7 +140,11 @@ body {
 .phone_img {
     margin: 0px 10px;
 }
-.ru,
+.ru {
+    color: #766e6e;
+    font-size: 18px;
+    margin: 10px;
+}
 .ua {
     color: #000000;
     font-size: 16px;
@@ -152,6 +156,7 @@ body {
 .ru:hover {
     color: #000000;
 }
+
 .content {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
