@@ -162,17 +162,7 @@ body {
     align-items: center;
     position: static;
 }
-/* .content::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: rgba(0, 11, 16, 0.3);
-    z-index: 1;
-} */
+
 .title_main {
     display: flex;
     flex-direction: column;
@@ -196,10 +186,11 @@ body {
     max-width: 550px;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     margin-bottom: 40px;
-    color: #414141;
+    text-shadow: rgb(255, 255, 255) 0 0 2px;
+    color: #040404;
 }
 .about-us {
 }
@@ -339,7 +330,27 @@ body {
 .price_bolt {
     font-size: 36px;
 }
-/* Кнопка */
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: justify;
+    line-height: 24px;
+    text-indent: 1.5em;
+    margin: 10px;
+}
+/* Кнопки */
 .button {
     text-decoration: none;
     outline: none;
@@ -348,7 +359,7 @@ body {
     height: 45 px;
     line-height: 45px;
     border-radius: 45px;
-    margin: 30px 20px 10px 20px;
+    margin: 30px 0px 10px 20px;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -360,6 +371,56 @@ body {
     transition: 0.3s;
 }
 .button:hover {
+    background: #fff;
+    box-shadow: 0 15px 20px rgba(1, 5, 4, 0.4);
+    color: #040404;
+    transform: translateY(-1px);
+}
+.button-1 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 80%;
+    height: 45 px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 5px 10px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #000000;
+    background: #2ee59d;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.button-1:hover {
+    background: #fff;
+    box-shadow: 0 15px 20px rgba(1, 5, 4, 0.4);
+    color: #040404;
+    transform: translateY(-1px);
+}
+.button-2 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 80%;
+    height: 45 px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 0px 5px 10px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #000000;
+    background: #e8bb4f;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.button-2:hover {
     background: #fff;
     box-shadow: 0 15px 20px rgba(1, 5, 4, 0.4);
     color: #040404;
