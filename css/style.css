@@ -172,6 +172,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
     max-width: 700px;
     height: calc(100vh - 13.38vh);
     margin-left: 10px;
@@ -185,7 +186,7 @@ body {
     font-size: 40px;
     margin-bottom: 50px;
     opacity: 0.9;
-    text-align: center;
+    text-align: start;
 }
 .description {
     max-width: 650px;
@@ -541,7 +542,7 @@ body {
 }
 @media (max-width: 975px) {
     .main__text {
-        font-size: px;
+        font-size: 38px;
         text-align: left;
         margin-bottom: 20px;
     }
@@ -585,11 +586,13 @@ body {
         margin: 0 auto;
     }
     .main__text {
+        min-width: 100%;
         font-size: 38px;
         text-align: center;
     }
     .description {
         text-align: center;
+        width: 100%;
     }
     .title_main {
         max-width: 100%;
@@ -625,7 +628,7 @@ body {
         line-height: 16px;
     }
     .description {
-        font-size: 16px;
+        font-size: 14px;
     }
     .product__title {
         font-family: "Montserrat", sans-serif;
@@ -670,11 +673,14 @@ body {
     }
 }
 @media (max-width: 480px) {
+    .description {
+        font-size: 11px;
+    }
     .logo__text {
         font-size: 16px;
     }
     .main__text {
-        font-size: 38px;
+        font-size: 30px;
     }
     .about-us {
         margin: 0;
@@ -708,6 +714,7 @@ body {
     }
     .title_main {
         margin-top: 20px;
+        width: 100%;
     }
     .main__text {
         font-size: 26px;
@@ -730,10 +737,14 @@ body {
     .title_main {
         margin: 5px;
     }
+    .main__text {
+        font-size: 27px;
+    }
     .about-us {
         margin: 10px;
     }
     .description {
+        font-size: 11px;
         margin: 0;
     }
     .about-us__bloc {
